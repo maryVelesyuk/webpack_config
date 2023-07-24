@@ -1,13 +1,14 @@
 import React from "react";
+import { Header } from "./components/Header";
 import styles from "./style.scss";
 
 const App = () => {
   return (
-    <h1 className={styles.content} data-testid="testid">
-      <p>React and Webpack</p>
+    <div className={styles.content}>
+      <Header />
       <img src="assets/cat.jpeg" alt="cat" />
       <div className={styles.img} />
-    </h1>
+    </div>
   );
 };
 
