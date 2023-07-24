@@ -1,7 +1,18 @@
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+}
 .content {
   height: 100vh;
   padding: 5rem;
   background-color: rgb(236, 211, 236);
   font-family: monospace;
   text-align: center;
+}
+.img {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-image: url(assets/cat.jpeg);
 }

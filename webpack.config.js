@@ -18,6 +18,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
     filename: "[name].[contenthash].js",
+    assetModuleFilename: "assets/[name][ext]",
   },
   module: {
     rules: [
@@ -49,6 +50,10 @@ module.exports = {
           },
           "sass-loader",
         ],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|eot|ttf|woff)$/,
+        type: "asset/resource",
       },
     ],
   },
